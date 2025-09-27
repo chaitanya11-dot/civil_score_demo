@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Civil Score",
+  "description": "A prototype web application where citizens have a digital civil reputation score. Users can view their score, scan QR codes, report activities, and interact with a LawBot assistant.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
