@@ -15,11 +15,11 @@ const ActivityDetail: React.FC = () => {
 
   if (iframeUrl) {
     return (
-      <div className="w-full h-full -m-4 sm:-m-6 lg:-m-8">
+      <div className="w-full min-h-screen">
         <iframe
           src={iframeUrl}
           title={title}
-          className="w-full h-full border-0"
+          className="w-full h-screen border-0"
         ></iframe>
       </div>
     );
@@ -47,7 +47,11 @@ const ActivityDetail: React.FC = () => {
             <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0" />
             <div>
               <p className="font-semibold text-green-800">Verified by Blockchain ✅</p>
-              <a href="#" className="text-xs text-green-700 hover:underline">
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="text-xs text-green-700 hover:underline"
+              >
                 View Transaction: 0x123...abc (Placeholder)
               </a>
             </div>
